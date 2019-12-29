@@ -37,9 +37,9 @@ try:
     # porque seria un falso "True", ya que el xbmc en las xbox no son dharma por lo tanto no existen los addons
     logger.info("tvalacarta.core.updater get_platform="+config.get_platform())
     logger.info("tvalacarta.core.updater get_system_platform="+config.get_system_platform())
-    if config.get_platform()=="kodi-krypton":
+    if config.get_platform()=="kodi-leia":
         import xbmc
-        REMOTE_FILE = "http://descargas.tvalacarta.info/"+config.PLUGIN_NAME+"-kodi-krypton-"
+        REMOTE_FILE = "http://descargas.tvalacarta.info/"+config.PLUGIN_NAME+"-kodi-leia-"
         DESTINATION_FOLDER = xbmc.translatePath( "special://home/addons")
     elif config.get_platform()=="kodi-jarvis":
         import xbmc
